@@ -1,0 +1,62 @@
+
+
+.eatOsImg{
+    margin-top: -1130px;
+    margin-left: 951px;
+    position: relative;
+}
+
+.first
+{
+    position: absolute;
+    white-space: nowrap;
+    margin-left: 858px;
+    margin-top: -471px;
+}
+
+.fnameholder
+{
+    position: absolute;
+    margin-left: 856px;
+    height: 32px;
+    width: 183px;
+    margin-top: -440px;
+}
+
+.lnameholder
+{
+    position: absolute;
+    margin-left: 1079px;
+    height: 32px;
+    width: 183px;
+    margin-top: -440px;
+}
+
+.Last
+{
+    margin-top: -471px;
+    position: absolute;
+    margin-left: 1081px;
+    white-space: nowrap;
+}
+
+.emailinput
+{
+    position: absolute;
+    margin-left: 860px;
+    margin-top: -369px;
+    width: 401px;
+    height: 33px;
+}
+
+.passwordfield
+{
+    position: absolute;
+    margin-top: -330px;
+    margin-left: 863px;
+}
+
+.form-control2{
+    height: 33px;
+    width: 354px;
+}

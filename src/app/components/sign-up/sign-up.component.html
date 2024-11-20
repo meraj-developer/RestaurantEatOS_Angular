@@ -1,0 +1,137 @@
+<div class="row">
+  <div class="col-md-12">
+    <app-home></app-home>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="assets/images/eatos5.png" alt="" class="eatOsImg" />
+        <strong
+        style="
+      font-weight: bold;
+      font-size: 23px;
+      margin-top: -492px;
+      position: absolute;
+      margin-left: -274px;
+        "
+        >Sign Up</strong
+      >
+    </div>
+    
+    <div></div>
+    <div class="col-md-6">
+        <form>
+            <div class="form-group">
+              <label for="fname" class="first">First Name</label>
+              <input type="text" class="form-control" id="fname" placeholder="Enter First Name" class="fnameholder">
+            </div>
+
+            <div class="form-group">
+                <label for="lname" class="Last">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" class="lnameholder">
+            </div>
+
+            <div class="form-group">
+              <label
+                for="exampleInputEmail1"
+                style="font-size: 16px;
+                margin-top: -396px;
+                position: absolute;
+                margin-left: 860px;"
+                >Email*</label
+              >
+              <input
+                type="email"
+                class="emailinput"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter your email"
+                name="email"
+                ngModel
+                required
+                email
+                #email="ngModel"
+              />
+            </div>
+
+            <div class="passwordfield">
+            <div class="form-group">
+              <label
+                for="exampleInputPassword1"
+                style="font-size: 16px; font-weight: 500"
+                >Password*</label
+              >
+              <div class="input-group">
+                <input
+                  [type]="isPasswordVisible ? 'text' : 'password'"
+                  class="form-control2"
+                  id="exampleInputPassword1"
+                  placeholder="Enter your password"
+                  name="password"
+                  ngModel
+                  required
+                  #password="ngModel"
+                  minlength="10"
+                  style="font-size: 16px"
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    (click)="togglePasswordVisibility()"
+                    style="cursor: pointer;
+                    position: absolute;
+                    height: 33px;"
+                  >
+                    <i
+                      class="fas"
+                      [ngClass]="isPasswordVisible ? 'fa-eye-slash' : 'fa-eye'"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label
+                for="exampleInputPassword1"
+                style="font-size: 16px; font-weight: 500"
+                >Confirm Password*</label
+              >
+              <div class="input-group">
+                <input
+                  [type]="isPasswordVisible ? 'text' : 'password'"
+                  class="form-control2"
+                  id="exampleInputPassword1"
+                  placeholder="Enter your password"
+                  name="password"
+                  ngModel
+                  required
+                  #password="ngModel"
+                  minlength="10"
+                  style="font-size: 16px"
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    (click)="togglePasswordVisibility()"
+                    style="cursor: pointer;
+                    position: absolute;
+                    height: 33px;"
+                  >
+                    <i
+                      class="fas"
+                      [ngClass]="isPasswordVisible ? 'fa-eye-slash' : 'fa-eye'"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </form>
+    </div>
+
+</div>

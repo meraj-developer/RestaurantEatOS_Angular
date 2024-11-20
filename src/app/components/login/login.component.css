@@ -1,0 +1,182 @@
+.login-page
+{
+    margin-top: 57px;
+    margin-left: -242px;
+}
+
+.eatOsImg{
+    margin-top: -1240px;
+    margin-left: 1200px;
+    position: relative;
+}
+
+form{
+    margin-top: -509px;
+    margin-left: 1082px;
+}
+
+.form-control{
+    height: 41px;
+    width: 382px;
+}
+
+.form-control2{
+    height: 41px;
+    width: 340px;
+}
+
+.small-font{
+    font-size: 16px;
+    margin-left: 1138px;
+    font-weight: normal;
+}
+
+.bold-font
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1248px;
+    margin-top: -38px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+}
+
+.we
+{
+    margin-left: 787px;
+    font-size: 16px;
+    margin-top: -12px;
+}
+
+.magic-link
+{
+    margin-left: 1199px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    margin-top: -40px;
+}
+
+.for{
+    margin-left: 1123px;
+    font-size: 16px;
+    margin-top: -39px;
+}
+
+.passwordSignin
+{
+    margin-left: 1321px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    margin-top: -40px;
+}
+
+.sigg
+{
+    margin-left: 110px;
+    margin-top: -19px;
+    position: absolute;
+}
+
+.sigg2
+{
+    margin-left: -188px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+
+
+
+.youcan
+{
+    margin-left: 900px;
+    font-size: 16px;
+}
+
+.signmanually{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1231px;
+    margin-top: -41px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+}
+
+.lineft
+{
+    margin-left: 1069px;
+    margin-top: -22px;
+}
+
+.linesd
+{
+    margin-left: 1291px;
+    margin-top: -26px;
+}
+
+.ors
+{
+    margin-left: 1258px;
+    margin-top: -22px;
+    position: absolute;
+    font-size: 16px;
+}
+
+/* .apple
+{
+    width: 58px;
+    height: 57px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 110px;
+    margin-top: 27px;
+} */
+
+.google
+{
+    width: 58px;
+    height: 57px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 1253px;
+    margin-top: -78px;
+}
+
+/* .img
+{
+    height: 31px;
+    width: 27px;
+    margin-top: 11px;
+    margin-left: 16px;    
+} */
+
+.img2
+{
+    height: 31px;
+    width: 27px;
+    margin-top: 11px;
+    margin-left: 16px;
+}
+
+.microsoft
+{
+    width: 58px;
+    height: 57px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 1404px;
+    margin-top: -59px;
+}
+
+.img3
+{
+    height: 31px;
+    width: 27px;
+    margin-top: 11px;
+    margin-left: 16px;
+}
+

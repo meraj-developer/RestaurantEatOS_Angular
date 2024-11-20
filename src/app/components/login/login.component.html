@@ -1,0 +1,214 @@
+<div class="row">
+  <div class="col-md-12">
+    <app-home></app-home>
+  </div>
+</div>
+
+
+<div class="login-page">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="assets/images/eatos5.png" alt="" class="eatOsImg" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+        <strong
+          style="
+            font-weight: bold;
+            font-size: 23px;
+            margin-top: -70px;
+            position: absolute;
+            margin-left: -6px;
+          "
+          >Sign In</strong
+        >
+        <div class="form-group">
+          <label
+            for="exampleInputEmail1"
+            style="font-size: 16px; font-weight: 500"
+            >Email*</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter your email"
+            name="email"
+            ngModel
+            required
+            email
+            #email="ngModel"
+          />
+          <small
+            class="text-danger"
+            *ngIf="!email.valid && email.touched"
+            style="font-size: 16px"
+            >Please Enter Valid Email</small
+          >
+        </div>
+
+        <div class="form-group">
+          <label
+            for="exampleInputPassword1"
+            style="font-size: 16px; font-weight: 500"
+            >Password*</label
+          >
+          <div class="input-group">
+            <input
+              [type]="isPasswordVisible ? 'text' : 'password'"
+              class="form-control2"
+              id="exampleInputPassword1"
+              placeholder="Enter your password"
+              name="password"
+              ngModel
+              required
+              #password="ngModel"
+              minlength="10"
+              style="font-size: 16px"
+            />
+            <div class="input-group-append">
+              <span
+                class="input-group-text"
+                (click)="togglePasswordVisibility()"
+                style="cursor: pointer"
+              >
+                <i
+                  class="fas"
+                  [ngClass]="isPasswordVisible ? 'fa-eye-slash' : 'fa-eye'"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <small
+            class="text-danger"
+            *ngIf="!password.valid && password.touched"
+            style="font-size: 16px"
+            >Password must be 10 characters or fewer.</small
+          >
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label
+            class="form-check-label"
+            for="exampleCheck1"
+            style="margin-top: -2px; position: absolute; color: black"
+            >Remember me</label
+          >
+          <button
+            type="button"
+            class="btn btn-link"
+            (click)="redirectToResetPassword()"
+            style="
+              margin-top: -6px;
+              margin-left: 225px;
+              color: black;
+              text-decoration: none;
+            "
+          >
+            Forgot Password?
+          </button>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-secondary"
+          style="
+            width: 383px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 25px;
+            /* padding-bottom: 52px; */
+            margin-top: -2px;
+            padding-top: 0px;
+          "
+        >
+          Log In
+        </button>
+      </form>
+
+      <div class="col-md-12">
+        <h5 class="small-font my-3">New to eatOS?</h5>
+        <a class="bold-font" style="cursor: pointer;" (click)="redirectToSignup()">Create a New Account</a>
+        <p class="text-center text-secondary we">We'll email you a</p>
+        <span class="magic-link">magic link</span>
+        <p class="text-center text-secondary for">for a</p>
+        <h1 class="passwordSignin">
+          password-free <br />
+          <span class="text-center sigg">
+            Sign <br />
+            <span class="sigg2">in.</span></span
+          >
+        </h1>
+        <p class="text-center text-secondary youcan">Or you can</p>
+        <a href="" class="signmanually">sign in manually instead.</a>
+        <div class="text-secondary lineft">___________________________</div>
+        <b class="ors">OR</b>
+        <div class="text-secondary linesd">________________________</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="text-secondary apple">
+        <a
+          href="https://appleid.apple.com/auth/authorize?client_id=net.eatos-d4.signin&redirect_uri=https%3A%2F%2Fbrowserapi.eatos.net%2Fauth%2Fapple&response_type=code%20id_token&scope=name%20email&response_mode=form_post"
+          target="_blank"
+          style="
+            border-radius: 50%;
+            margin-left: 1119px;
+            border: 2px solid black;
+            position: absolute;
+            width: 58px;
+            height: 57px;
+            margin-top: -77px;
+          "
+        >
+          <img
+            src="assets/images/eatos6.png"
+            alt="error"
+            class="img"
+            style="
+              width: 56px;
+              height: 55px;
+              margin-left: -1px;
+              margin-top: -2px;
+            "
+          />
+        </a>
+      </div>
+
+      <div class="text-secondary google">
+        <a
+          href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=326819269272-sd05evf3re8tjrcdfmpqum83ggvkfa3o.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=id_token&gsiwebsdk=gis_attributes&redirect_uri=https%3A%2F%2Fd4.eatos.net&response_mode=form_post&origin=https%3A%2F%2Fd4.eatos.net&display=popup&prompt=select_account&gis_params=ChRodHRwczovL2Q0LmVhdG9zLm5ldBIUaHR0cHM6Ly9kNC5lYXRvcy5uZXQYByoWcTl6cytkejZlRUpSamxhb3ZmSVFsUTJIMzI2ODE5MjY5MjcyLXNkMDVldmYzcmU4dGpyY2RmbXBxdW04M2dndmtmYTNvLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tOAFCQDRhNmRiNzNhYmI2ZDAwNzM5NWY1YzNlNDg0NzEwYWIxOGM4YjJjNzc5ZDA0MWFhNmRkNTVmNjAyZWU0Nzc4YmI&service=lso&o2v=1&ddm=1&flowName=GeneralOAuthFlow"
+          target="_blank"
+        >
+          <img src="assets/images/eatos9.png" alt="error" class="img2" />
+        </a>
+      </div>
+
+      <div class="text-secondary microsoft">
+        <a
+          href="https://login.microsoftonline.com/17861300-5cd8-4c1c-9446-5c057107c80f/oauth2/v2.0/authorize?client_id=3cc0612b-4146-4de7-aa66-5d045dff133d&scope=user.read%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fd4.eatos.dev%2F&client-request-id=963b3414-8b68-400c-aed8-8d7c029a400d&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.38.2&client_info=1&code_challenge=V9rNtQ0fjrGH356hdT13hgpDdHW-17jK255LbFnd1HE&code_challenge_method=S256&nonce=0d2b8b11-5989-4921-85e8-7c4980255763&state=eyJpZCI6IjRhMjJkYTk3LTM2ZDEtNDZmOC04NjAyLTgxZjI2OWQwYjIyZSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicG9wdXAifX0%3D"
+          target="_blank"
+        >
+          <img src="assets/images/eatos7.png" alt="error" class="img3" />
+        </a>
+      </div>
+      <p
+        class="version text-secondary text-center mt-3"
+        style="margin-left: 1038px; font-size: 10px"
+      >
+        Version: 4.10.6.162 © eatOS POS Inc. 2017-2024 <br />
+        By continuing, you agree to the eatOS Customer Agreement or other <br />
+        agreement for eatOS services, and the Privacy Notice. This site uses
+        essential <br />
+        cookies. See our Cookie Notice for more information.
+      </p>
+    </div>
+  </div>
+</div>

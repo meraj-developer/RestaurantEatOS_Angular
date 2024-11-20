@@ -1,0 +1,39 @@
+
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+    width: 61%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.carouselSlide
+{
+    margin-left: -417px;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f7f5f5; 
+}
+
+.carousel-indicators li:hover{
+    background-color: grey;
+}
+
+.TextFont{
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: -578px;
+}
+
+
+
+
+
+
+
+
+
